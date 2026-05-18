@@ -74,7 +74,7 @@ python 03_evaluate.py  # 평가 + XAI → outputs/final_report.csv 생성
 ```
 
 ## 모델 파이프라인원본 데이터
-
+```
 │
 ▼
 [01_eda.py]
@@ -98,7 +98,7 @@ Confusion Matrix (오탐/미탐 분석)
 ROC Curve / AUC
 Feature Importance (XAI)
 Learning Curve (과적합 진단)
-
+```
 ## 평가 결과
 
 | 모델 | CV F1 | Test F1 | Test AUC |
