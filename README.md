@@ -4,27 +4,27 @@
 ## 프로젝트 개요
 
 현대의 사이버 위협은 하루에도 수만 개씩 쏟아지며, 기존의 패턴(시그니처) 기반 탐지는
-신·변종 악성코드를 차단하는 데 한계가 있습니다.
+신·변종 악성코드를 차단하는 데 한계가 있다
 
 vAlscanbox는 PE(Portable Executable) 파일의 정적 특징을 머신러닝으로 학습시켜
-파일이 실행되기 전 악성 여부를 빠르게 탐지하는 분류 파이프라인입니다.
+파일이 실행되기 전 악성 여부를 빠르게 탐지하는 분류 파이프라인
 
 ## 프로젝트 구조
 ```
 vAlscanbox/
 ├── data/
-│   └── uci_malware_detection.xls   # 원본 데이터셋
+│   └── uci_malware_detection.xls  
 ├── src/
 │   ├── 01_eda.py                   # EDA 및 전처리
 │   ├── 02_modeling.py              # 모델 학습 및 하이퍼파라미터 튜닝
 │   └── 03_evaluate.py              # 평가 및 XAI 시각화
 ├── models/
-│   └── best_model.pkl              # 최종 저장 모델 (02 실행 후 생성)
+│   └── best_model.pkl              
 ├── outputs/
-│   ├── preprocessed_data.csv       # 전처리 완료 데이터
-│   ├── test_set.pkl                # 테스트 셋
-│   ├── model_results.csv           # 모델별 성능 비교
-│   ├── final_report.csv            # 최종 평가 리포트
+│   ├── preprocessed_data.csv       
+│   ├── test_set.pkl               
+│   ├── model_results.csv          
+│   ├── final_report.csv            
 │   ├── 01_class_distribution.png
 │   ├── 02_feature_activation.png
 │   ├── 03_correlation_heatmap.png
@@ -73,8 +73,9 @@ python 02_modeling.py  # 모델 학습   → models/best_model.pkl 생성
 python 03_evaluate.py  # 평가 + XAI → outputs/final_report.csv 생성
 ```
 
-## 모델 파이프라인원본 데이터
+## 모델 파이프라인
 ```
+원본 데이터
 │
 ▼
 [01_eda.py]
